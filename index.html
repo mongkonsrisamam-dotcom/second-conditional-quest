@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>If I... Second Conditional Quest</title>
+<style>
+:root{color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;font-size:1.2rem;font-family:system-ui,"Segoe UI",Roboto,sans-serif;background:#012169;background-image:linear-gradient(0deg,transparent 46%,#c8102e30 46%,#c8102e30 54%,transparent 54%),linear-gradient(90deg,transparent 46%,#c8102e30 46%,#c8102e30 54%,transparent 54%),linear-gradient(135deg,transparent 45%,#ffffff14 45%,#ffffff14 48%,#c8102e40 48%,#c8102e40 52%,#ffffff14 52%,#ffffff14 55%,transparent 55%),linear-gradient(45deg,transparent 45%,#ffffff14 45%,#ffffff14 48%,#c8102e40 48%,#c8102e40 52%,#ffffff14 52%,#ffffff14 55%,transparent 55%),radial-gradient(circle at 50% 120%,#c8102e66,transparent 55%),linear-gradient(180deg,#012169,#0a2a6e);background-size:auto;background-attachment:fixed;color:#fff;min-height:100vh;overflow-x:hidden}
+#app{max-width:1000px;margin:0 auto;padding:12px;position:relative;z-index:1}
+#bg{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+#bg i{position:absolute;font-style:normal;opacity:.16;animation:fy 9s ease-in-out infinite alternate}
+@keyframes fy{to{transform:translateY(-18px) rotate(6deg)}}
+.card,.box{backdrop-filter:blur(6px)}
+h1{font-size:2.6rem;margin:.3em 0}
+.box{background:#ffffff14;border:1px solid #ffffff2a;border-radius:16px;padding:16px;margin:10px 0}
+.top{display:flex;gap:10px;align-items:center;justify-content:space-between;font-weight:700}
+.top span,.top button{background:#ffffff1f;border-radius:12px;padding:6px 14px;font-size:1.3rem}
+#tm{min-width:64px;text-align:center}
+#tm.warn{background:#e5383b}
+.bw{display:flex;justify-content:center;margin:6px 0 14px}
+#bulb{position:relative;width:130px;height:130px;border-radius:50%;display:grid;place-items:center;font-size:3.4rem;font-weight:900;color:#e5e5e5;background:radial-gradient(circle at 35% 30%,#8a8a8a,#2b2b2b);border:3px solid #ffffff55;margin-bottom:28px}
+#bulb::after{content:"";position:absolute;bottom:-28px;left:50%;transform:translateX(-50%);width:58px;height:30px;border-radius:0 0 12px 12px;background:repeating-linear-gradient(180deg,#9aa0a6 0 6px,#6b7075 6px 10px)}
+#bulb.on{color:#fff;background:radial-gradient(circle at 35% 30%,#ffc2c2,#ff1f2d 55%,#9b0010);box-shadow:0 0 44px 20px #ff1f2dd0;animation:bl .6s infinite alternate}
+#bulb.fast{animation-duration:.2s}
+@keyframes bl{from{opacity:1}to{opacity:.35;box-shadow:0 0 8px 2px #ff1f2d88}}
+.bar{height:8px;background:#ffffff22;border-radius:8px;margin:8px 0;overflow:hidden}
+.bar i{display:block;height:100%;width:100%;background:#2ee6a6;transition:width 1s linear}
+.bar.warn i{background:#e5383b}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:640px){.cols{grid-template-columns:1fr}}
+.card{display:flex;align-items:center;gap:10px;width:100%;margin:0 0 10px;padding:10px 12px;border:2px solid #ffffff33;border-radius:14px;background:#ffffff12;color:#fff;font-size:1.5rem;text-align:left;cursor:pointer;min-height:88px}
+.card .num{flex:none;width:46px;height:46px;font-size:1.4rem;border-radius:50%;background:#7b5cff;display:grid;place-items:center;font-weight:800}
+.card .em{font-size:3.2rem;flex:none}
+.card.sel{border-color:#ffd60a;background:#ffd60a30;transform:scale(1.02)}
+.card.ok{border-color:#2ee6a6;background:#2ee6a633;pointer-events:none}
+.card.bad{border-color:#ff4d6d;background:#ff4d6d33;animation:sh .3s}
+@keyframes sh{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.hint{text-align:center;min-height:1.6em;font-weight:600;font-size:1.5rem}
+.btn{background:#ffd60a;color:#222;border:0;border-radius:14px;padding:14px 26px;font-size:1.5rem;font-weight:800;cursor:pointer}
+.opt{display:block;width:100%;margin:8px 0;padding:12px;border-radius:12px;border:2px solid #ffffff33;background:#ffffff14;color:#fff;font-size:1.6rem;cursor:pointer}
+.opt:disabled{opacity:.4}
+.center{text-align:center}
+.big{font-size:3.5rem}
+.fb b{color:#ffd60a}
+</style></head><body><div id="bg"><i style="left:4%;top:8%;font-size:4rem">🕰️</i><i style="left:80%;top:6%;font-size:4rem;animation-delay:-3s">🇬🇧</i><i style="left:12%;top:68%;font-size:3.6rem;animation-delay:-5s">🎡</i><i style="left:85%;top:62%;font-size:4rem;animation-delay:-2s">🏰</i><i style="left:46%;top:88%;font-size:3.4rem;animation-delay:-6s">🌉</i><i style="left:58%;top:3%;font-size:3.4rem;animation-delay:-4s">✈️</i><i style="left:2%;top:40%;font-size:3.6rem;animation-delay:-7s">🚌</i><i style="left:92%;top:36%;font-size:3.4rem;animation-delay:-1s">☂️</i></div><div id="app"></div>
+<script>
+const L=[
+{t:"Dream Big",c:[
+["🎰","If I won a million dollars,","I would buy a big house.","Unreal situation: If + past simple (won), would + verb (buy)."],
+["🐦","If I could fly,","I would visit every country.","Use could in the if-clause for an imaginary ability."],
+["🚀","If I were an astronaut,","I would travel to Mars.","With I/he/she we often use 'were' in the if-clause."],
+["👻","If I saw a ghost,","I would scream loudly.","If + past simple (saw), would + verb (scream)."]]},
+{t:"Good Advice",c:[
+["🤒","If I were you,","I would see a doctor.","'If I were you' is used to give advice."],
+["😴","If he slept more,","he wouldn't feel tired.","Negative result: would not (wouldn't) + verb."],
+["🌧️","If it rained tomorrow,","we would stay at home.","Even for the future, we use past simple + would for an unlikely idea."],
+["🏀","If she were taller,","she could join the basketball team.","could = would be able to. Use could in the result part."]]},
+{t:"Our World",c:[
+["🐶","If I had a dog,","I would walk it every morning.","If + past simple (had), would + verb (walk)."],
+["♻️","If we recycled more,","the Earth would be cleaner.","If + past simple (recycled), would + be + adjective."],
+["🦁","If I met a lion,","I would stay very still.","If + past simple (met), would + verb (stay)."],
+["🏖️","If I lived near the sea,","I would swim every day.","Imaginary situation = past simple + would."]]},
+{t:"Could & Might",c:[
+["🎤","If she practiced every day,","she might win the singing contest.","might = maybe. It shows less certainty than would."],
+["💻","If I had a computer,","I could make my own game.","could = would be able to."],
+["📸","If you were famous,","many people would take photos of you.","Use 'were' after you in the if-clause too."],
+["🚲","If I had a bike,","I could ride to school.","If + past simple (had), could + verb (ride)."]]},
+{t:"Final Challenge",c:[
+["📱","What would you do if you lost your phone?","I would ask my friend to call it.","Question form: What would you do if + past simple?"],
+["⚽","Would you be happy if you won the match?","Yes, I would be very happy.","Short answer: Yes, I would. / No, I wouldn't."],
+["🗻","If you were to visit Japan,","you could see Mount Fuji.","'were to' makes an imaginary future idea sound more formal."],
+["🤥","If I didn't tell the truth,","my friends wouldn't trust me.","Negative past simple in if-clause: didn't + verb."]]}];
+const G=[
+{q:"Which planet is closest to the Sun? 🪐",o:["Venus","Mercury","Earth"],a:1},
+{q:"How many continents are there on Earth? 🌍",o:["5","9","7"],a:2},
+{q:"Which animal is the largest on Earth? 🐋",o:["Blue whale","Elephant","Giraffe"],a:0},
+{q:"What comes next? 2, 4, 8, 16, ... 🧠",o:["20","24","32"],a:2}];
+const PR=["Excellent! 🌟","Very good! 👏","Great job! 🎉","Perfect! 💯","Awesome! 🔥"];
+const EN=["Almost there! You're so close! 💪","Nice try! Just a little more and you'll get it!","You have the ability. You'll get it next time! 🌈","Not quite, but you're getting closer! ⭐"];
+const SP=["Excellent!","Good job!","Fantastic!"],SPW=["Almost there!","Nice try!","You can do it!"],NW=["one","two","three","four"],LW=["ay","bee","see","dee"];
+const $=s=>document.querySelector(s),R=a=>a[Math.floor(Math.random()*a.length)],AB="abcd";
+let li=0,score=0,P,done,ldone,sel,t=30,iv,cur,paused=false,ac,mus=null,snd=true,ms=0;
+function au(){try{if(!ac)ac=new(window.AudioContext||window.webkitAudioContext)();if(ac.state==="suspended")ac.resume()}catch(e){}}
+function tone(f,d,ty,v,w){if(!snd||!ac)return;try{const o=ac.createOscillator(),g=ac.createGain(),s=ac.currentTime+(w||0);o.type=ty||"square";o.frequency.value=f;g.gain.setValueAtTime(v||.05,s);g.gain.exponentialRampToValueAtTime(.0001,s+d);o.connect(g);g.connect(ac.destination);o.start(s);o.stop(s+d)}catch(e){}}
+const SQ=[220,261.6,329.6,392,329.6,261.6,246.9,293.7,370,440,370,293.7];
+function music(){if(mus)return;mus=setInterval(()=>{const n=SQ[ms%SQ.length];tone(n,.16,"triangle",.045);if(ms%4===0)tone(n/2,.3,"sine",.07);ms++},190)}
+function ding(){tone(660,.15,"triangle",.1);tone(880,.15,"triangle",.1,.12);tone(1320,.25,"triangle",.1,.24)}
+function buzz(){tone(200,.3,"sawtooth",.07)}
+function say(t,q){if(!snd||!window.speechSynthesis)return;try{if(!q)speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang="en-US";u.rate=.95;u.pitch=1.1;const v=speechSynthesis.getVoices().find(x=>/^en/i.test(x.lang));if(v)u.voice=v;speechSynthesis.speak(u)}catch(e){}}
+function snb(){return '<button id="snd" aria-label="sound">'+(snd?"🔊":"🔇")+"</button>"}
+function bindSnd(){const b=$("#snd");if(b)b.onclick=()=>{snd=!snd;b.textContent=snd?"🔊":"🔇";if(!snd&&window.speechSynthesis)speechSynthesis.cancel()}}
+function start(){$("#app").innerHTML='<div class="center"><div class="big">🎯🚀👻</div><h1>If I... Second Conditional Quest</h1></div><div class="box"><p>Match each <b>If-clause (1-4)</b> with its <b>result (a-d)</b>.</p><p>5 levels · 20 pairs · 30 seconds per pair · 100 points per match.</p><p>Tap a number, then tap a letter. Beat a brain question to unlock the next level!</p><p>Remember: <b>If + past simple, would + verb</b></p></div><div class="center"><button class="btn" id="go">▶ Start Game</button></div>';
+$("#go").onclick=()=>{au();music();li=0;score=0;level()}}
+function perm(){let p;do{p=[0,1,2,3].sort(()=>Math.random()-.5)}while(p.some((v,i)=>v===i));return p}
+function level(){cur=L[li];P=perm();done=[0,0,0,0];ldone=[0,0,0,0];sel=null;paused=false;
+let a="",b="";cur.c.forEach((c,i)=>{a+='<button class="card" id="n'+i+'"><span class="num">'+(i+1)+'</span><span class="em">'+c[0]+'</span><span>'+c[1]+"</span></button>"});
+for(let p=0;p<4;p++)b+='<button class="card" id="l'+p+'"><span class="num">'+AB[p]+"</span><span>"+cur.c[P[p]][2]+"</span></button>";
+$("#app").innerHTML='<div class="top"><span>Level '+(li+1)+"/5 · "+cur.t+'</span><span id="sc">⭐ '+score+'</span><span id="tm">30</span>'+snb()+'</div><div class="bar" id="bar"><i id="bi"></i></div><div class="bw"><div id="bulb">30</div></div><div class="hint" id="hint">Tap a number first. You can do it! 💪</div><div class="cols"><div>'+a+"</div><div>"+b+'</div></div><div id="fb"></div>';
+bindSnd();cur.c.forEach((c,i)=>$("#n"+i).onclick=()=>pickN(i));for(let p=0;p<4;p++)$("#l"+p).onclick=()=>pickL(p);resetT()}
+function hint(s){$("#hint").textContent=s}
+function pickN(i){if(done[i]||paused)return;sel=i;say("Number "+NW[i]);cur.c.forEach((c,k)=>$("#n"+k).classList.toggle("sel",k===i));hint("Now tap the matching letter ➜")}
+function pickL(p){if(ldone[p]||paused)return;if(sel===null){hint("Pick a number first! 💪");say("Pick a number first");return}say("Number "+NW[sel]+" match with "+LW[p]);resolve(sel,p,false)}
+function resetT(){clearInterval(iv);t=30;draw();iv=setInterval(()=>{if(paused)return;t--;draw();if(t<=10&&t>0){tone(t<=5?1300:900,.12,"sawtooth",.07);if(t<=5)tone(1300,.1,"sawtooth",.07,.15)}if(t<=0){clearInterval(iv);const n=sel!==null?sel:done.indexOf(0);resolve(n,-1,true)}},1000)}
+function draw(){const e=$("#tm");if(!e)return;e.textContent=t;e.classList.toggle("warn",t<=10);const bl=$("#bulb");bl.textContent=t;bl.classList.toggle("on",t<=10);bl.classList.toggle("fast",t<=5);$("#bar").classList.toggle("warn",t<=10);$("#bi").style.width=(t/30*100)+"%"}
+function resolve(n,p,to){clearInterval(iv);$("#bulb").classList.remove("on","fast");const ok=!to&&P[p]===n,cp=P.indexOf(n);done[n]=1;ldone[cp]=1;
+cur.c.forEach((c,k)=>$("#n"+k).classList.remove("sel"));sel=null;
+$("#n"+n).classList.add(ok?"ok":"bad");$("#l"+cp).classList.add("ok");
+if(ok){score+=100;$("#sc").textContent="⭐ "+score;ding();const w=R(SP);hint(w+" ⭐ +100");say(w,1);
+if(done.every(x=>x))setTimeout(fin,1100);else{resetT()}return}
+buzz();say(to?"Time's up! You can do it!":R(SPW),1);paused=true;
+const it=cur.c[n];
+$("#fb").innerHTML='<div class="box fb"><p>'+(to?"⏰ Time's up! ":"")+R(EN)+"</p><p>Correct answer: <b>"+(n+1)+" ➜ "+AB[cp]+"</b></p><p>"+it[0]+" <b>"+it[1]+" "+it[2]+"</b></p><p>💡 "+it[3]+'</p><div class="center"><button class="btn" id="nx">Got it ➜</button></div></div>';
+hint("");$("#nx").onclick=()=>{$("#fb").innerHTML="";paused=false;if(done.every(x=>x))fin();else resetT()}}
+function fin(){clearInterval(iv);li<4?gate():end()}
+function gate(){const g=G[li],bad=[];
+$("#app").innerHTML='<div class="top"><span>Level '+(li+1)+' complete! ✅</span><span>⭐ '+score+"</span>"+snb()+'</div><div class="box center"><div class="big">🔓</div><h1>Brain Gate</h1><p>Answer correctly to unlock Level '+(li+2)+'!</p><h2>'+g.q+'</h2><div id="os"></div><p class="hint" id="gh"></p></div>';bindSnd();
+g.o.forEach((o,i)=>{const b=document.createElement("button");b.className="opt";b.textContent=String.fromCharCode(65+i)+". "+o;b.onclick=()=>{if(i===g.a){ding();say(R(SP),1);b.style.background="#2ee6a655";$("#gh").innerHTML=R(PR)+'<br><br><button class="btn" id="up">Start Level '+(li+2)+" 🚀</button>";$("#up").onclick=()=>{li++;level()};document.querySelectorAll(".opt").forEach(x=>x.disabled=true)}else{buzz();say("Try again!",1);b.disabled=true;$("#gh").textContent=R(EN)+" Try again!"}};$("#os").appendChild(b)})}
+function end(){const s=score>=1600?"🏆🌟🌟🌟":score>=1000?"🥈🌟🌟":"🥉🌟";
+$("#app").innerHTML='<div class="center"><div class="big">'+s+'</div><h1>Quest Complete!</h1></div><div class="box center"><h2>Final score: '+score+" / 2000</h2><p>"+(score>=1600?"Excellent! You are a Second Conditional master!":score>=1000?"Very good! You have great ability. Practice makes perfect!":"Good effort! You're getting closer. Try again and you will do even better!")+'</p><button class="btn" id="re">🔁 Play Again</button></div>';
+$("#re").onclick=()=>{li=0;score=0;level()};ding()}
+start();
+</script></body></html>
